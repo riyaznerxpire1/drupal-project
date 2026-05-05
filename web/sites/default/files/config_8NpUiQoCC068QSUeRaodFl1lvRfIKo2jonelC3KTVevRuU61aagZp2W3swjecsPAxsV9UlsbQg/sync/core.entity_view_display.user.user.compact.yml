@@ -1,11 +1,12 @@
-uuid: cc6aa91d-bdb9-4bc7-8533-5fbdda375c68
+uuid: aa0d3f7c-68aa-4951-a6bb-4b6c73c15d44
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_gender
-    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_phone_no
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -30,7 +31,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_date_of_birth: true
   field_gender: true
-  field_phone_number: true
+  field_phone_no: true
   member_for: true
-  search_api_excerpt: true

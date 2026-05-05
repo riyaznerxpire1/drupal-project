@@ -1,4 +1,4 @@
-uuid: cfa42d87-0051-44d8-a1dc-697dd1c4ef40
+uuid: eb3adb39-8e83-4d20-b00c-1da9e620c037
 langcode: en
 status: true
 dependencies:
@@ -34,12 +34,3 @@ filters:
     status: true
     weight: 11
     settings: {  }
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: false
-    weight: -10
-    settings:
-      allowed_html: '<i> <span>'
-      filter_html_help: true
-      filter_html_nofollow: false

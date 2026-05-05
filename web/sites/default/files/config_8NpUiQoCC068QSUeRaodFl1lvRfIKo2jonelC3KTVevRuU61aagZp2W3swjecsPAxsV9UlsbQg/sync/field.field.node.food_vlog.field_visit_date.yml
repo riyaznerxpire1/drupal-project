@@ -1,0 +1,21 @@
+uuid: 1dee8a31-a782-494c-9d92-bfb7c8534d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visit_date
+    - node.type.food_vlog
+  module:
+    - datetime
+id: node.food_vlog.field_visit_date
+field_name: field_visit_date
+entity_type: node
+bundle: food_vlog
+label: 'Visit Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

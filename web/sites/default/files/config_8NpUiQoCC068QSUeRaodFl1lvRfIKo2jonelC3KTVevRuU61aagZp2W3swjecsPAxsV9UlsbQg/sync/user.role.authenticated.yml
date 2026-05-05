@@ -1,16 +1,15 @@
-uuid: c4304e43-cbd5-40b8-a7ec-64ff028ba3d3
+uuid: ce020aaa-cfb0-4ded-9517-bec7e757dc83
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.custom_html_demo
-    - filter.format.webform_default
+    - filter.format.custom_html_tags
   module:
     - comment
     - contact
+    - field_permissions
     - filter
-    - fontawesome
     - search
     - shortcut
     - system
@@ -23,12 +22,13 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access fontawesome additional settings'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create field_date_of_birth'
+  - 'edit own field_date_of_birth'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'use text format custom_html_demo'
-  - 'use text format webform_default'
+  - 'use text format custom_html_tags'
+  - 'view own field_date_of_birth'

@@ -1,0 +1,17 @@
+uuid: c4be72f9-bfad-4c52-9794-5ac0c1478a0e
+langcode: en
+status: true
+dependencies: {  }
+name: 'custom html tags'
+format: custom_html_tags
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false

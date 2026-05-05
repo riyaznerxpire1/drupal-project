@@ -1,4 +1,4 @@
-uuid: 99346899-df98-486a-972f-deeee6608549
+uuid: d77eec60-01bb-4ef2-a6ac-6a79610892c4
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - akkashdharsaun02@gmail.com
+  - riyaznerxpire@gmail.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

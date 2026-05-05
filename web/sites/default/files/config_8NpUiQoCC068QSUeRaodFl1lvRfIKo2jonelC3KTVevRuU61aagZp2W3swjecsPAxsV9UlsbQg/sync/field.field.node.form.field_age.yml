@@ -1,0 +1,21 @@
+uuid: 6a97be8d-7005-4c55-863e-5a97432b10cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.form
+  module:
+    - options
+id: node.form.field_age
+field_name: field_age
+entity_type: node
+bundle: form
+label: age
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

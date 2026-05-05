@@ -1,13 +1,15 @@
-uuid: 855e3e49-198e-4dcc-b4b5-e17635b9ed0d
+uuid: 88c582c4-d01c-4076-a23e-7d196da1ce02
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_gender
-    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_phone_no
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - datetime
     - image
     - options
     - user
@@ -18,20 +20,30 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_date_of_birth:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_gender:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
-  field_phone_number:
-    type: string
+  field_phone_no:
+    type: number_integer
     label: above
     settings:
-      link_to_entity: false
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
   member_for:
     weight: 5
@@ -47,5 +59,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  search_api_excerpt: true
+hidden: {  }

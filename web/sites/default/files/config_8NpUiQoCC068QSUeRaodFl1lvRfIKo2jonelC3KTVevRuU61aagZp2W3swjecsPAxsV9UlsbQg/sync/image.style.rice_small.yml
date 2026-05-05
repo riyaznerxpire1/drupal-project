@@ -1,0 +1,14 @@
+uuid: 3bbca206-fff3-4744-a866-913e19fb50c6
+langcode: en
+status: true
+dependencies: {  }
+name: rice_small
+label: rice_small
+effects:
+  f553b72c-e114-49e5-9580-fe2fa1f0cbe7:
+    uuid: f553b72c-e114-49e5-9580-fe2fa1f0cbe7
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 300

@@ -1,4 +1,4 @@
-uuid: 289c16a0-bcd2-4362-b6d3-b6b82d036021
+uuid: a60fc165-bc4e-4918-8abd-7411cd734388
 langcode: en
 status: true
 dependencies:
@@ -48,9 +48,7 @@ settings:
       reversed: true
       startIndex: true
     ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<i>'
-        - '<span>'
+      allowed_tags: {  }
 image_upload:
   status: true
   scheme: public

@@ -1,13 +1,15 @@
-uuid: 576f7a8a-da78-46cd-adc6-d93bb82a2fc3
+uuid: b46dfc8c-601f-4e91-8c64-5afd9cf1adc0
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_gender
-    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_phone_no
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - datetime
     - image
     - user
 _core:
@@ -23,18 +25,23 @@ content:
   contact:
     weight: 5
     region: content
-  field_gender:
-    type: options_select
-    weight: 7
+  field_date_of_birth:
+    type: datetime_default
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_phone_number:
-    type: string_textfield
+  field_gender:
+    type: options_select
     weight: 8
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_phone_no:
+    type: number
+    weight: 7
+    region: content
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   language:

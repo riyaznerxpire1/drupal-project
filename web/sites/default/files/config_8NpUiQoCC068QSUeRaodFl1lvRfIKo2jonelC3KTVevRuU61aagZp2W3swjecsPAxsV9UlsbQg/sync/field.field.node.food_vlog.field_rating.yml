@@ -1,0 +1,23 @@
+uuid: 7e14c573-50ff-46dc-b116-469255fbb6bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.food_vlog
+id: node.food_vlog.field_rating
+field_name: field_rating
+entity_type: node
+bundle: food_vlog
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

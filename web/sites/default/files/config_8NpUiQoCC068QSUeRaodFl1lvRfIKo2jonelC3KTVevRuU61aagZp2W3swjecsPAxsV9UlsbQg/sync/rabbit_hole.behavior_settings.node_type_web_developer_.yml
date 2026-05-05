@@ -1,0 +1,14 @@
+uuid: ae1ede97-e850-4999-91a4-31ab27f7a2f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.web_developer_
+id: node_type_web_developer_
+entity_type_id: node_type
+entity_id: web_developer_
+action: page_not_found
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

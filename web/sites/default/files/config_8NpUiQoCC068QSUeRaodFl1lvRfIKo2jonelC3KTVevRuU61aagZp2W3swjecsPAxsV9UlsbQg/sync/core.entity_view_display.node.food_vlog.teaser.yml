@@ -1,0 +1,34 @@
+uuid: bb1c33db-2ea2-4c16-b6ac-79a8acf91e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_vlog.field_description
+    - field.field.node.food_vlog.field_food_name
+    - field.field.node.food_vlog.field_image_food_
+    - field.field.node.food_vlog.field_location
+    - field.field.node.food_vlog.field_price
+    - field.field.node.food_vlog.field_rating
+    - field.field.node.food_vlog.field_visit_date
+    - node.type.food_vlog
+  module:
+    - user
+id: node.food_vlog.teaser
+targetEntityType: node
+bundle: food_vlog
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_food_name: true
+  field_image_food_: true
+  field_location: true
+  field_price: true
+  field_rating: true
+  field_visit_date: true

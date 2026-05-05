@@ -1,4 +1,4 @@
-uuid: d02ac615-4099-4127-afe1-1263e753e348
+uuid: 8a9276d1-72a7-425b-a4f4-6e353e1de2ac
 langcode: en
 status: true
 dependencies:
@@ -18,8 +18,8 @@ settings:
       value: Female
       label: Female
     -
-      value: Other
-      label: Other
+      value: Others
+      label: Others
   allowed_values_function: ''
 module: options
 locked: false

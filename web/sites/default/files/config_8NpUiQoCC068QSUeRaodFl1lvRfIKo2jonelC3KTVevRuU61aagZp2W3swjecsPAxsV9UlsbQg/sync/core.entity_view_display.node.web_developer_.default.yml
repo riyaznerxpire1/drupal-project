@@ -1,0 +1,71 @@
+uuid: bcc79797-35ef-4784-9d8f-2a849f93ab7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.web_developer_.body
+    - field.field.node.web_developer_.field_developer_name
+    - field.field.node.web_developer_.field_experience
+    - field.field.node.web_developer_.field_profile_image
+    - field.field.node.web_developer_.field_skills
+    - node.type.web_developer_
+  module:
+    - image
+    - text
+    - user
+id: node.web_developer_.default
+targetEntityType: node
+bundle: web_developer_
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_developer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_experience:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_profile_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_skills:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

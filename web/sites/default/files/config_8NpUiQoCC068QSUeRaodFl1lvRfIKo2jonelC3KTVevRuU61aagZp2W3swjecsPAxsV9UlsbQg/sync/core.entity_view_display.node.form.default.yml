@@ -1,0 +1,46 @@
+uuid: 5cb6ab7e-a7e4-415c-93a2-26a0397eaaa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.form.body
+    - field.field.node.form.field_age
+    - field.field.node.form.field_name
+    - node.type.form
+  module:
+    - options
+    - text
+    - user
+id: node.form.default
+targetEntityType: node
+bundle: form
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_age:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
