@@ -1,0 +1,19 @@
+uuid: 2c624cff-bfd0-4609-9f5f-e224c38c2f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.studentinformation
+id: node.studentinformation.field_email
+field_name: field_email
+entity_type: node
+bundle: studentinformation
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

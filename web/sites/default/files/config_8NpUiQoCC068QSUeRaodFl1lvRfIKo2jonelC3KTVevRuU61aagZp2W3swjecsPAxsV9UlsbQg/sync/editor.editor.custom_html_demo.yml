@@ -1,0 +1,42 @@
+uuid: 17210d03-edcb-47ca-8e8f-d45f8bd7c40d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.custom_html_demo
+  module:
+    - ckeditor5
+format: custom_html_demo
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - code
+      - drupalInsertImage
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<div>'
+        - '<span>'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 0
+    height: 0

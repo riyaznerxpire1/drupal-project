@@ -1,0 +1,120 @@
+uuid: 23edfd09-c9d9-4a35-99bd-ddc3f0b80e5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: registerpagecss
+label: RegisterPagecss
+code: |-
+  /* ===== Page background ===== */
+  body.path-user-register {
+    background: #f4f6f9;
+  }
+
+  /* ===== Center container ===== */
+  body.path-user-register .block__content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+  }
+
+  /* ===== Form card ===== */
+  body.path-user-register .user-register-form {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+
+  /* ===== Title ===== */
+  body.path-user-register h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  /* ===== Form fields spacing ===== */
+  body.path-user-register .form-item {
+    margin-bottom: 15px;
+  }
+
+  /* ===== Inputs & Select ===== */
+  body.path-user-register input,
+  body.path-user-register select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+  /* ===== Input focus effect ===== */
+  body.path-user-register input:focus,
+  body.path-user-register select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+  }
+
+  /* ===== File upload ===== */
+  body.path-user-register input[type="file"] {
+    border: none;
+  }
+
+  /* ===== Button ===== */
+  body.path-user-register button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  /* ===== Button hover ===== */
+  body.path-user-register button:hover {
+    background: #0056b3;
+  }
+
+  /* ===== Checkbox & captcha spacing ===== */
+  body.path-user-register .form-type-checkbox,
+  body.path-user-register .captcha {
+    margin-top: 10px;
+  }
+
+  /* ===== Small help text ===== */
+  body.path-user-register .description {
+    font-size: 12px;
+    color: #666;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 600px) {
+    body.path-user-register .user-register-form {
+      padding: 20px;
+    }
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/register
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+contexts: {  }
+conditions_require_all: true

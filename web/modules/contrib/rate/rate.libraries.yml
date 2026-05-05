@@ -1,0 +1,95 @@
+##########################
+# Rate widgets libraries.
+##########################
+
+unvote-helper:
+  version: 1.0
+  js:
+    js/unvote-helper.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+w-custom:
+  version: 1.0
+  js:
+    js/w-custom.js : {}
+  css:
+    theme:
+      css/w-custom.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-emotion:
+  version: 1.0
+  js:
+    js/w-emotion.js : {}
+  css:
+    theme:
+      css/w-emotion.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-fivestar:
+  version: 1.0
+  js:
+    js/w-fivestar.js : {}
+  css:
+    theme:
+      css/w-fivestar.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-yesno:
+  version: 1.0
+  js:
+    js/w-yesno.js : {}
+  css:
+    theme:
+      css/w-yesno.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-thumbsupdown:
+  version: 1.0
+  js:
+    js/w-thumbsupdown.js : {}
+  css:
+    theme:
+      css/w-thumbsupdown.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-thumbsup:
+  version: 1.0
+  js:
+    js/w-thumbsup.js : {}
+  css:
+    theme:
+      css/w-thumbsup.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal
+
+w-numberupdown:
+  version: 1.0
+  js:
+    js/w-numberupdown.js : {}
+  css:
+    theme:
+      css/w-numberupdown.css: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/drupal

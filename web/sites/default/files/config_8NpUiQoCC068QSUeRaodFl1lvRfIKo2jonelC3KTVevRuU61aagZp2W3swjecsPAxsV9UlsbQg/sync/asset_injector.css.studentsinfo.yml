@@ -1,0 +1,91 @@
+uuid: ef7166f8-add1-447b-a45d-ec4976f45f41
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: studentsinfo
+label: studentsinfo
+code: |-
+  /* ===== Student Page Styling ===== */
+
+  .node--type-studentinformation {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* Title */
+  .node--type-studentinformation h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  /* Labels */
+  .node--type-studentinformation .field__label {
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  /* Values */
+  .node--type-studentinformation .field__item {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  /* Each field block */
+  .node--type-studentinformation .field {
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    margin-bottom: 12px;
+    transition: 0.3s;
+  }
+
+  /* Hover effect */
+  .node--type-studentinformation .field:hover {
+    background: #eef3f7;
+  }
+
+  /* Links */
+  .node--type-studentinformation a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .node--type-studentinformation a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .node--type-studentinformation {
+      padding: 20px;
+    }
+
+    .node--type-studentinformation h1 {
+      font-size: 24px;
+    }
+  }
+media: all
+preprocess: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      studentinformation: studentinformation
+contexts: {  }
+conditions_require_all: true
