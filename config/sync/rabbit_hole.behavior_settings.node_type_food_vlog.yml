@@ -1,0 +1,14 @@
+uuid: 59a7831f-7405-4fd8-b999-502eedc676cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.food_vlog
+id: node_type_food_vlog
+entity_type_id: node_type
+entity_id: food_vlog
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

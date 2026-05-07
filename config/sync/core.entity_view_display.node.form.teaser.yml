@@ -1,0 +1,34 @@
+uuid: b9508f95-f8cc-42fc-8ca6-bf1bfa9ce3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.form.body
+    - field.field.node.form.field_age
+    - field.field.node.form.field_name
+    - node.type.form
+  module:
+    - text
+    - user
+id: node.form.teaser
+targetEntityType: node
+bundle: form
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_age: true
+  field_name: true

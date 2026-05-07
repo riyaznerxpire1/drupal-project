@@ -1,0 +1,95 @@
+uuid: f9e7f027-f068-4712-9fc4-675fcd3e5aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.food_vlog.field_description
+    - field.field.node.food_vlog.field_food_name
+    - field.field.node.food_vlog.field_image_food_
+    - field.field.node.food_vlog.field_location
+    - field.field.node.food_vlog.field_price
+    - field.field.node.food_vlog.field_rating
+    - field.field.node.food_vlog.field_visit_date
+    - image.style.rice_small
+    - node.type.food_vlog
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.food_vlog.default
+targetEntityType: node
+bundle: food_vlog
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_food_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image_food_:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: rice_small
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_rating:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_visit_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

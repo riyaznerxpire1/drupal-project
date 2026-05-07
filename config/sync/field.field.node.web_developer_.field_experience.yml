@@ -1,0 +1,23 @@
+uuid: 51cdf5d6-9a0e-4885-9873-9987730b957e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience
+    - node.type.web_developer_
+id: node.web_developer_.field_experience
+field_name: field_experience
+entity_type: node
+bundle: web_developer_
+label: Experience
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

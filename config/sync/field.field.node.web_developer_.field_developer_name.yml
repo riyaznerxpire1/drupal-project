@@ -1,0 +1,19 @@
+uuid: 9de8d867-0c20-40e6-bc17-dcc8a0695178
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_developer_name
+    - node.type.web_developer_
+id: node.web_developer_.field_developer_name
+field_name: field_developer_name
+entity_type: node
+bundle: web_developer_
+label: 'Developer Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

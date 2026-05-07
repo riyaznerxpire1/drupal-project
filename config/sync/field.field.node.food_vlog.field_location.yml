@@ -1,0 +1,19 @@
+uuid: 3c45d834-612a-48b0-9111-4596f6d803ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.food_vlog
+id: node.food_vlog.field_location
+field_name: field_location
+entity_type: node
+bundle: food_vlog
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
