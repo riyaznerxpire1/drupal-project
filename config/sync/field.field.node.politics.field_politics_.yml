@@ -1,0 +1,19 @@
+uuid: a8be658d-03a8-4d2e-b82b-33674b08edab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_politics_
+    - node.type.politics
+id: node.politics.field_politics_
+field_name: field_politics_
+entity_type: node
+bundle: politics
+label: 'politics name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

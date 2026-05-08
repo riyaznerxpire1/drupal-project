@@ -1,0 +1,34 @@
+uuid: f50baacc-4404-4a48-92ed-660a7ca76d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sports.body
+    - field.field.node.sports.field_no_of_players_i_a_team
+    - field.field.node.sports.field_sports_name
+    - node.type.sports
+  module:
+    - text
+    - user
+id: node.sports.teaser
+targetEntityType: node
+bundle: sports
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_no_of_players_i_a_team: true
+  field_sports_name: true

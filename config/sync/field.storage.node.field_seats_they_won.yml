@@ -1,0 +1,20 @@
+uuid: befce250-d713-47c0-b8ca-544c9b647bfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_seats_they_won
+field_name: field_seats_they_won
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

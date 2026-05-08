@@ -1,0 +1,14 @@
+uuid: b5674880-3e12-406a-82f2-7bdddb934928
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.politics
+id: node_type_politics
+entity_type_id: node_type
+entity_id: politics
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,34 @@
+uuid: 0092e5a1-3ceb-420a-99e6-1592a9af0df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.politics.body
+    - field.field.node.politics.field_politics_
+    - field.field.node.politics.field_seats_they_won
+    - node.type.politics
+  module:
+    - text
+    - user
+id: node.politics.teaser
+targetEntityType: node
+bundle: politics
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_politics_: true
+  field_seats_they_won: true

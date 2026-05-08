@@ -1,0 +1,23 @@
+uuid: c815e711-11ca-4e52-87d6-81cd1c190aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.politics
+  module:
+    - text
+id: node.politics.body
+field_name: body
+entity_type: node
+bundle: politics
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

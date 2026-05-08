@@ -1,0 +1,23 @@
+uuid: c68b0c07-7e6d-48b6-9741-e0bf429ac920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seats_they_won
+    - node.type.politics
+id: node.politics.field_seats_they_won
+field_name: field_seats_they_won
+entity_type: node
+bundle: politics
+label: 'seats they won'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,14 @@
+uuid: 0bf3b174-4e08-48fe-9ae7-8d10c0f09c03
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sports
+id: node_type_sports
+entity_type_id: node_type
+entity_id: sports
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied
